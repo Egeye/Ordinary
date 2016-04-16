@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#2ea3fe" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/titlebar_menu_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="7dp"
+                android:text=""
+                android:textColor="#999999"
+                android:textSize="24sp" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#ebebeb" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="日常日记/OrDiary"
+                android:textColor="#9b9b9b" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="1.0"
+                android:textColor="#9b9b9b" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/listDivider" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="?android:attr/listDivider" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/layout_button"
+                android:drawableLeft="@drawable/ic_updates"
+                android:gravity="center_vertical"
+                android:paddingLeft="22dp"
+                android:text="		检测更新"
+                android:textColor="#9b9b9b" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="?android:attr/listDivider" />
+
+            <Button
+                android:id="@+id/btn_about"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/layout_button"
+                android:drawableLeft="@drawable/ic_about"
+                android:gravity="center_vertical"
+                android:paddingLeft="22dp"
+                android:text="		关于"
+                android:textColor="#9b9b9b" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="?android:attr/listDivider" />
+
+            <Button
+                android:id="@+id/btn_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/layout_button"
+                android:drawableLeft="@drawable/ic_feedback"
+                android:gravity="center_vertical"
+                android:paddingLeft="22dp"
+                android:text="		反馈"
+                android:textColor="#9b9b9b" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="?android:attr/listDivider" />
+
+            <Button
+                android:id="@+id/btn_exit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/layout_button"
+                android:drawableLeft="@drawable/ic_exit"
+                android:gravity="center_vertical"
+                android:paddingLeft="22dp"
+                android:text="		退出"
+                android:textColor="#9b9b9b" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

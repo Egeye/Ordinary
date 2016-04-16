@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.octavio.ordinary"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+    
+    
+    <!-- 获取网络状态  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <!-- 访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+    <!-- 获取WiFi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    
+    <!-- 允许程序写入外部存储,如SD卡上写文件 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    
+    <!-- 读取电话状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    
+    <!-- 获取精确位置 GPS芯片接收卫星的定位信息,定位精度达10米以内 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    <!-- 通过WiFi或移动基站的方式获取用户错略的经纬度信息 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    
+    <!-- 获取模拟定位信息 -->
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <!--  android:theme="@style/AppTheme"  @android:style/Theme.Light-->
+        
+        <meta-data 
+            android:name="com.baidu.lbsapi.API_KEY"  
+    		android:value="SHVPoTtIpzfonPD3HCkc5sIt"/>
+        
+        <activity
+            android:name="com.octavio.ordinary.LogonActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name=".MainActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity 
+            android:name="com.octavio.ordinary.DiaryActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="com.octavio.ordinary.HomeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="com.octavio.ordinary.utils.RegisterActivityAuto"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="com.octavio.ordinary.HomeRemindActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog">
+        </activity>
+        
+        <activity 
+            android:name="com.octavio.ordinary.MapActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <receiver android:name="com.octavio.ordinary.receiver.MyReceiver">
+            <intent-filter>
+                <action android:name="com.android.system.time" />
+            </intent-filter>
+        </receiver>
+        
+        <service android:name="com.octavio.ordinary.service.RemindService">
+            <intent-filter>
+                <action android:name="com.org.android.diary.service.MY_SERVICE" />
+
+                <category android:name="android.intent.category.default" />
+            </intent-filter>
+        </service>
+        
+        <service android:name="com.octavio.ordinary.service.MusicService"></service>
+        
+		<service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+    	</service>
+        
+    </application>
+
+</manifest>

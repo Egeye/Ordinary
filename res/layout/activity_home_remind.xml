@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="vertical"
+        android:padding="7dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <AnalogClock
+                android:id="@+id/myclock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/current_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:hint="打开时间："
+                android:textColor="#9b9b9b" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/set_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:hint="提醒时间："
+                android:textColor="#9b9b9b" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/remind_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/blue_button_selector"
+                android:text="设置提醒"
+                android:textSize="14sp"
+                android:textColor="#ffffff" >
+            </Button>
+
+            <Button
+                android:id="@+id/remind_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:background="@drawable/blue_button_selector"
+                android:text="取消提醒"
+                android:textColor="#ffffff" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

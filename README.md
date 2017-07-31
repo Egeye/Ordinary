@@ -1,13 +1,18 @@
 # Ordinary
 Ordinary Or Diary. It based on <a href="https://github.com/SpecialCyCi/AndroidResideMenu"> [ AndroidResideMenu ].</a><br>
 Develop Tools: Eclipse + Genymotion.
-##Menu
+
+## Menu
 ![image](https://github.com/Egeye/Ordinary/blob/master/1.png)
-##Diary
+
+## Diary
 ![image](https://github.com/Egeye/Ordinary/blob/master/D.png)
-##Record
+
+## Record
 ![image](https://github.com/Egeye/Ordinary/blob/master/R.png)
-##Calendar
+
+## Calendar
 ![image](https://github.com/Egeye/Ordinary/blob/master/C.png)
-##Map
+
+## Map
 ![image](https://github.com/Egeye/Ordinary/blob/master/M.png)
